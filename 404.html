@@ -5,8 +5,12 @@
 <title>wonderkun's blog</title>
 </head>
 <script language=javascript>
-if (document.domain =='www.huyanbing.me')
-this.location = "http://www.yanbinghu.com" + this.location.pathname + this.location.search;
+var domain = "wonderkun.cc";
+var src = window.location.href;
+var prtc = src.substring(0, src.indexOf(':'));
+var target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
+window.location.href = prtc + "://" + domain + target;
+location.href=prtc + "://" + domain + target;
 </script>
 <body>
  <h1></h1>
